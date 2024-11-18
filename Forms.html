@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- form tag is used to collect data from the users -->
+    <!-- to get rectangle box we use input tag -->
+    <!-- label tag is used to label the box that means we can specify or add name to box -->
+<form >
+    <fieldset>
+    <legend>Registration form</legend>
+    <label for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter the required value">
+    <br><br>
+    <label for="gmail">Gmail:</label>
+    <input id="gmail" type="gmail"placeholder="Enter the required value" required>
+    <br>
+    <br>
+    <label for="Password">Password:</label>
+    <input id="Password" type="password" value="Harshith" readonly placeholder="Enter the required value">
+    <br>
+    <br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" autofocus maxlength="10">
+    <br><br>
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob">
+    <!-- if we need dob with time we use datetime-local -->
+    <br><br>
+    <label for="Gender">Gender:</label>
+    <input type="radio" id="male" name="Gender" checked>
+    <!-- name  attribute is used select only one option(male) if we not specify name it will all options -->
+    <label for="male">male</label>
+    <input type="radio" id="female" name="Gender" disabled>
+    <label for="female">female</label>
+    <br><br>
+    <label for="Skills">Skills:</label>
+    <input type="checkbox" id="Html" name="Html">
+    <label for="Html">Html</label>
+    <input type="checkbox" id="CSS" name="CSS">
+    <label type="CSS">CSS</label>
+    <input type="checkbox" id="React" name="React">
+    <label type="React">React</label>
+    <input type="checkbox" id="Js" name="Js">
+    <label type="Js">Js</label>
+    <br>
+    <br>
+    <label for="country">Country:</label>
+    <select id="country">
+    <option value="">India</option>
+    <option value="">China</option>
+    <option value="">Russia</option>
+    </select>
+    <br>
+    <br>
+    <label for="Feedback">Feedback:</label>
+    <textarea rows="5" cols="50"></textarea>
+    <br>
+    <br>
+    <label for="photo">Upload photo:</label>
+    <input type="file" id="photo">
+    <br><br>
+    <input type="submit" value="Register">
+</fieldset>
+</form> 
+</body>
+</html>
